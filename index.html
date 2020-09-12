@@ -4,32 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+
+        body{
+            height:100%;
+            margin:0;
+        }
+        
+        .top-menu{
+            /*border: 1px solid black;*/
+            font-family: Arial, sans-serif;            
+            text-align:right;
+            padding:20px;
+            
+            }
+
+        a{
+            text-decoration:none;
+            color:rgba(0, 0, 0, 0.87);
+            padding-right: 13px;
+            }
+
+        .apps{
+            width: 23px;
+            height: 23px;
+            vertical-align: middle;
+        }
+        
+        .user{
+            width: 35px;
+            height: 35px;
+            vertical-align: middle;
+        }
+        
+        .principal{
+            /*border:1px solid blue;*/
+            height:auto;
+            padding: 100px;
+            padding-bottom: 400px;
+        }
+        
+        .imagen{
+            /*border: 1px solid black;*/
+            text-align: center; 
+            padding: 10px;           
+            }
+
+        .logo{
+            width:300px;
+            height:100px;
+        }
+        
+        .form{
+            /*border: 1px solid black;*/
+            text-align: center;
+        }
+        
+        .search{ 
+            padding: 5px 8px 0 16px;
+            border-radius: 30px;
+            height:40px;
+            width: 500px;
+            margin: 20px;
+            }
+        
+        .boton{
+            border:1px solid #f2f2f2;
+            margin:11px 4px;
+            padding: 0 16px;
+            height: 35px;;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .bottom-menu{
+            border: 1px solid black;
+            }
+
+    </style>
     
 </head>
+
 <body>
-    <div>
-        <ul>
-            <li><a href="#Gmail">Gmail</a></li>
-            <li><a href="#Imagenes">Imagenes</a></li>
-        </ul>
+    <div class="top-menu">
+        <a href="#Gmail">Gmail</a>
+        <a href="#Imagenes">Imagenes</a>
+        <a href="#apps"><img class="apps" src="app-menu-icon-10.png"></a>
+        <a href="#user"><img class="user" src="1200px-Google_Contacts_icon.svg.png"></a>
     </div>
-    <div>
-        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
-    </div>
-    <form>
-        <div>
-            <input type="search">
+
+    <div class="principal">
+        <div class="imagen">
+            <img class="logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
         </div>
-        <div>
-            <button type="submit">Google Search</button>
-            <button type="submit">I'm feeling Lucky</button>
-        </div>
-    </form>
-    <div>
-        Google offered in: <a href="#">Español(Latinoamérica)</a>
-        <a href="#">Quechua</a>
+
+        <form class="form">
+            <div>
+                <input class="search" type="search">
+            </div>
+            <div>
+                <button class="boton" type="submit">Google Search</button>
+                <button class="boton" type="submit">I'm feeling Lucky</button>
+            </div>
+        </form>
     </div>
-    <div>
+
+    <div class="bottom-menu">
         <span>Perú</span>
     </div>
 </body>
